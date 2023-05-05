@@ -1,0 +1,6 @@
+{
+  "manifest_version": 3,
+  "name": "Jira to Markdown",
+  "description": "Some features for jira",
+  "version": "1.0"
+}
