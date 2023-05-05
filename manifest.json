@@ -1,6 +1,22 @@
 {
-  "manifest_version": 3,
-  "name": "Jira to Markdown",
-  "description": "Some features for jira",
-  "version": "1.0"
+    "manifest_version": 3,
+    "name": "Jira to Markdown",
+    "description": "Some features for jira",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/content.js"
+            ],
+            "css": [
+                "styles/content.css"
+            ],
+            "matches": [
+                "*://*/*"
+            ],
+            "include_globs": [
+                "*://jira.*/*"
+            ]
+        }
+    ]
 }

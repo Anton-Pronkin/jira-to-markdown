@@ -1,0 +1,59 @@
+.copy-to-md-button {
+    position: relative;
+    margin-left: 8px;
+    vertical-align: super;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.copy-to-md-button:hover {
+    background-color: #dbdbdb;
+}
+
+.copy-to-md-button:active {
+    background-color: #c5c5c5;
+    transform: translate(1px, 1px);
+}
+
+.copy-to-md-button::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 8px;
+    height: 10px;
+    border: 2px solid #3b3b3b;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.copy-to-md-button::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    width: 8px;
+    height: 10px;
+    border: 2px solid #3b3b3b;
+    border-radius: 4px;
+    background-color: white;
+    transition: background-color 0.2s;
+}
+
+.copy-to-md-notification {
+    margin-left: 4px;
+    font-weight: bold;
+}
+
+.copy-to-md-notification--success {
+    color: #116811;
+}
+
+.copy-to-md-notification--error {
+    color: #8a0f15;
+}
